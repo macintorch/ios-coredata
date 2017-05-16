@@ -23,19 +23,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f9I-KA-NSg">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="686"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="m9v-p8-nai"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="f9I-KA-NSg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="6Ea-I0-zXY"/>
-                            <constraint firstItem="f9I-KA-NSg" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="9nK-If-nNm"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="f9I-KA-NSg" secondAttribute="trailing" constant="-16" id="JOx-XW-ryV"/>
-                            <constraint firstAttribute="trailing" secondItem="f9I-KA-NSg" secondAttribute="trailing" id="MbE-Lu-yMl"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="f9I-KA-NSg" secondAttribute="bottom" id="dtr-x1-XIK"/>
-                            <constraint firstItem="f9I-KA-NSg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="oYo-vk-eY1"/>
-                            <constraint firstItem="f9I-KA-NSg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="zlq-a5-nra"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="f9I-KA-NSg" secondAttribute="bottom" constant="-19" id="IGh-PG-MhK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="f9I-KA-NSg" secondAttribute="trailing" constant="-16" id="PPN-Lc-apW"/>
+                            <constraint firstItem="f9I-KA-NSg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-64" id="rni-XE-aVh"/>
+                            <constraint firstItem="f9I-KA-NSg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="s2p-au-02s"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="w2f-7r-kjM">
@@ -45,6 +45,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="f9I-KA-NSg" id="rKB-4L-WRh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
